@@ -4,6 +4,7 @@
 
 議事録(2026-04-15)を起点に、以下を整理しています。
 
+- [docs/plan/roadmap.md](docs/plan/roadmap.md) — **6箱 × 初期/中期/終了 のロードマップ**(まずここ)
 - [docs/plan/ai-task-manager.md](docs/plan/ai-task-manager.md) — 勝手にタスク管理する仕組み(AI上司)の設計
 - [docs/plan/tray-app-spec.md](docs/plan/tray-app-spec.md) — Mac常駐トレイアプリの試作スペック
 - [docs/tasks/README.md](docs/tasks/README.md) — 6箱タスク一覧(PC/MLP/Compliance/Infra/Contracts/Dashboard)
