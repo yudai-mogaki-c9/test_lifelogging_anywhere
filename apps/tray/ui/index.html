@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI上司 トレイ</title>
+    <style>
+      * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif; }
+      body { margin: 0; padding: 12px; background: #1e1e1e; color: #eee; }
+      h1 { font-size: 14px; margin: 0 0 8px; opacity: .7; }
+      .record { width: 100%; padding: 12px; font-size: 16px; background: #e03; color: white; border: 0; border-radius: 8px; cursor: pointer; }
+      .record.active { background: #444; }
+      .list { margin-top: 12px; max-height: 380px; overflow-y: auto; }
+      .task { padding: 8px; border-bottom: 1px solid #333; font-size: 12px; }
+      .task .title { font-size: 13px; }
+      .task .meta { opacity: .6; margin-top: 2px; }
+      .box-filter { margin-bottom: 8px; }
+      select { background: #2a2a2a; color: #eee; border: 1px solid #444; padding: 4px; }
+    </style>
+  </head>
+  <body>
+    <h1>AI上司 — タスク録音</h1>
+    <button id="rec" class="record">● 録音開始</button>
+    <div class="box-filter">
+      <select id="box">
+        <option value="">全箱</option>
+        <option value="pc">PC資産管理</option>
+        <option value="mlp">ドコモMLP</option>
+        <option value="compliance">コンプライアンス</option>
+        <option value="infra">インフラ統合</option>
+        <option value="contracts">契約・請求</option>
+        <option value="dashboard">ダッシュボード</option>
+      </select>
+    </div>
+    <div id="list" class="list"></div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
